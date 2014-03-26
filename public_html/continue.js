@@ -10,7 +10,10 @@ function init()
     
     for (i = 1; i < 11; i++)        
     {
-        //Continue
+        if (i === 2 || i === 7)
+        {
+            continue; 
+        }
         panel.innerHTML += "Loop iteration: " + i + "<br>";
             
     }
